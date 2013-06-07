@@ -11,10 +11,6 @@
 
 @interface DesignHelper : NSObject
 
-// User
-
-+ (UIView*)profileOfUser:(PFUser*)user;
-
 // NavBar
 
 + (void)setNavBarAppeareance;

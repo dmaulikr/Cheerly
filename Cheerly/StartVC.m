@@ -33,16 +33,11 @@
         if (user.isNew) {
             [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
                 if (connection.urlResponse.statusCode == 200) {
-                    NSLog(@"%@", result);
-                    UserProfile *newUser = [[UserProfile alloc] initWithClassName:@"UserProfile"];
-                    newUser.user = user;
-                    if ([result notNull:@"name"]) newUser.name = result[@"name"];
+                    if ([result notNull:@"name"]) [user setObject:result[@"name"] forKey:@"name"];
                     if ([result notNull:@"email"]) user.email = result[@"email"];
                     if ([result notNull:@"username"]) user.username = result[@"username"];
                     else user.username = result[@"id"];
-                    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                        [newUser saveInBackground];                       
-                    }];
+                    [user saveInBackground];
                 }
                 [progressHUD hide:YES];
                 [SplashVC presentMenuOnController:self];

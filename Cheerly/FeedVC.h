@@ -11,6 +11,7 @@
 @interface FeedVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
-
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (strong, nonatomic) NSArray *posts;
 
 @end

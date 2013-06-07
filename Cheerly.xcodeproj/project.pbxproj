@@ -83,12 +83,13 @@
 		DF15B5081762540B00D27835 /* newpost_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B5061762540B00D27835 /* newpost_placeholder@2x.png */; };
 		DF15B50B17625ACC00D27835 /* light_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B50917625ACC00D27835 /* light_button.png */; };
 		DF15B50C17625ACC00D27835 /* light_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B50A17625ACC00D27835 /* light_button@2x.png */; };
-		DF15B50F17625C8000D27835 /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B50E17625C8000D27835 /* UserProfile.m */; };
 		DF15B51417625E6100D27835 /* nav_button_back_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B51017625E6100D27835 /* nav_button_back_orange.png */; };
 		DF15B51517625E6100D27835 /* nav_button_back_orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B51117625E6100D27835 /* nav_button_back_orange@2x.png */; };
 		DF15B51617625E6100D27835 /* nav_button_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B51217625E6100D27835 /* nav_button_orange.png */; };
 		DF15B51717625E6100D27835 /* nav_button_orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B51317625E6100D27835 /* nav_button_orange@2x.png */; };
-		DF15B51A17625FDA00D27835 /* DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B51917625FDA00D27835 /* DataHelper.m */; };
+		DF15B52217626BC500D27835 /* ABFlatSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B51D17626BC500D27835 /* ABFlatSwitch.m */; };
+		DF15B52317626BC500D27835 /* ABFlatSwitchKnobLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B51F17626BC500D27835 /* ABFlatSwitchKnobLayer.m */; };
+		DF15B52417626BC500D27835 /* ABFlatSwitchToggleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B52117626BC500D27835 /* ABFlatSwitchToggleLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,14 +205,16 @@
 		DF15B5061762540B00D27835 /* newpost_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newpost_placeholder@2x.png"; sourceTree = "<group>"; };
 		DF15B50917625ACC00D27835 /* light_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_button.png; sourceTree = "<group>"; };
 		DF15B50A17625ACC00D27835 /* light_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light_button@2x.png"; sourceTree = "<group>"; };
-		DF15B50D17625C8000D27835 /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
-		DF15B50E17625C8000D27835 /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
 		DF15B51017625E6100D27835 /* nav_button_back_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_button_back_orange.png; sourceTree = "<group>"; };
 		DF15B51117625E6100D27835 /* nav_button_back_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_button_back_orange@2x.png"; sourceTree = "<group>"; };
 		DF15B51217625E6100D27835 /* nav_button_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_button_orange.png; sourceTree = "<group>"; };
 		DF15B51317625E6100D27835 /* nav_button_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_button_orange@2x.png"; sourceTree = "<group>"; };
-		DF15B51817625FDA00D27835 /* DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHelper.h; sourceTree = "<group>"; };
-		DF15B51917625FDA00D27835 /* DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHelper.m; sourceTree = "<group>"; };
+		DF15B51C17626BC500D27835 /* ABFlatSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFlatSwitch.h; sourceTree = "<group>"; };
+		DF15B51D17626BC500D27835 /* ABFlatSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFlatSwitch.m; sourceTree = "<group>"; };
+		DF15B51E17626BC500D27835 /* ABFlatSwitchKnobLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFlatSwitchKnobLayer.h; sourceTree = "<group>"; };
+		DF15B51F17626BC500D27835 /* ABFlatSwitchKnobLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFlatSwitchKnobLayer.m; sourceTree = "<group>"; };
+		DF15B52017626BC500D27835 /* ABFlatSwitchToggleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFlatSwitchToggleLayer.h; sourceTree = "<group>"; };
+		DF15B52117626BC500D27835 /* ABFlatSwitchToggleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFlatSwitchToggleLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,8 +327,6 @@
 				DF15B42517621B8500D27835 /* Constants.h */,
 				DF15B48C1762391B00D27835 /* Colors.h */,
 				DF15B48D1762391B00D27835 /* Colors.m */,
-				DF15B51817625FDA00D27835 /* DataHelper.h */,
-				DF15B51917625FDA00D27835 /* DataHelper.m */,
 				DF15B48F1762392800D27835 /* DesignHelper.h */,
 				DF15B4901762392800D27835 /* DesignHelper.m */,
 				DF15B4911762392800D27835 /* Font.h */,
@@ -339,8 +340,6 @@
 			children = (
 				DF15B4951762393100D27835 /* Post.h */,
 				DF15B4961762393100D27835 /* Post.m */,
-				DF15B50D17625C8000D27835 /* UserProfile.h */,
-				DF15B50E17625C8000D27835 /* UserProfile.m */,
 				DF15B4DD176250FD00D27835 /* UserFollow.h */,
 				DF15B4DE176250FD00D27835 /* UserFollow.m */,
 			);
@@ -376,6 +375,7 @@
 		DF15B44B17621E7D00D27835 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				DF15B51B17626BC500D27835 /* ABFlatSwitch */,
 				DF15B4A917623C2D00D27835 /* BlockAlerts */,
 				DF15B45A1762208E00D27835 /* JASidePanelController */,
 				DF15B4561762202000D27835 /* MBProgressHUD */,
@@ -574,6 +574,20 @@
 			path = "Resources/New Post";
 			sourceTree = "<group>";
 		};
+		DF15B51B17626BC500D27835 /* ABFlatSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B51C17626BC500D27835 /* ABFlatSwitch.h */,
+				DF15B51D17626BC500D27835 /* ABFlatSwitch.m */,
+				DF15B51E17626BC500D27835 /* ABFlatSwitchKnobLayer.h */,
+				DF15B51F17626BC500D27835 /* ABFlatSwitchKnobLayer.m */,
+				DF15B52017626BC500D27835 /* ABFlatSwitchToggleLayer.h */,
+				DF15B52117626BC500D27835 /* ABFlatSwitchToggleLayer.m */,
+			);
+			name = ABFlatSwitch;
+			path = Controls/ABFlatSwitch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -697,8 +711,9 @@
 				DF15B5011762531100D27835 /* SDWebImagePrefetcher.m in Sources */,
 				DF15B5021762531100D27835 /* UIButton+WebCache.m in Sources */,
 				DF15B5031762531100D27835 /* UIImageView+WebCache.m in Sources */,
-				DF15B50F17625C8000D27835 /* UserProfile.m in Sources */,
-				DF15B51A17625FDA00D27835 /* DataHelper.m in Sources */,
+				DF15B52217626BC500D27835 /* ABFlatSwitch.m in Sources */,
+				DF15B52317626BC500D27835 /* ABFlatSwitchKnobLayer.m in Sources */,
+				DF15B52417626BC500D27835 /* ABFlatSwitchToggleLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

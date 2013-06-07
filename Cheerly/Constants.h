@@ -23,6 +23,7 @@
 #import "Font.h"
 
 // Controls
+#import "ABFlatSwitch.h"
 #import "BlockActionSheet.h"
 #import "UIImageView+WebCache.h"
 #import "JASidePanelController.h"
@@ -33,7 +34,6 @@
 
 // Objects
 #import "Post.h"
-#import "UserProfile.h"
 #import "UserFollow.h"
 
 // View Controllers
