@@ -17,6 +17,8 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [PFFacebookUtils initializeFacebook];
     
+    [DesignHelper setNavBarAppeareance];
+    
     return YES;
 }
 

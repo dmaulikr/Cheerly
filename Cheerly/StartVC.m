@@ -14,8 +14,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [Colors lightBackground];
+    
     _fbButton = [[UIButton alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 50 , 300, 40)];
-    [_fbButton setBackgroundColor:[UIColor blueColor]];
+    [_fbButton setBackgroundColor:[Colors organge]];
     [_fbButton setTitle:@"Connect with Facebook" forState:UIControlStateNormal];
     [_fbButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_fbButton addTarget:self action:@selector(facebookAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -23,24 +25,22 @@
     
 }
 
-- (IBAction)faceookAction:(id)sender {
+- (IBAction)facebookAction:(id)sender {
 
     MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [PFFacebookUtils logInWithPermissions:@[@"email"] block:^(PFUser *user, NSError *error) {
         [progressHUD hide:YES];
-        /*if (!user) {
-         NSLog(@"Uh oh. The user cancelled the Facebook login.");
-         }
-         else if (user.isNew) {
-         NSLog(@"User signed up and logged in through Facebook!");
-         }
-         else {
-         NSLog(@"User logged in through Facebook!");
-         }*/
-        
+
         if (user) {
+            if (user.isNew) {
+                
+            }
+            [SplashVC presentMenuOnController:self];
+        }
+        else {
             
         }
+        
     }];
 
 }

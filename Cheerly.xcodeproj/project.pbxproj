@@ -32,8 +32,21 @@
 		DF15B44117621D8500D27835 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B44017621D8500D27835 /* Accounts.framework */; };
 		DF15B44317621D8A00D27835 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B44217621D8A00D27835 /* AdSupport.framework */; };
 		DF15B44E17621EBF00D27835 /* SplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B44D17621EBF00D27835 /* SplashVC.m */; };
-		DF15B45117621EDF00D27835 /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B45017621EDF00D27835 /* StartVC.m */; };
 		DF15B4591762202000D27835 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4581762202000D27835 /* MBProgressHUD.m */; };
+		DF15B45F1762208E00D27835 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B45C1762208E00D27835 /* JASidePanelController.m */; };
+		DF15B4601762208E00D27835 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B45E1762208E00D27835 /* UIViewController+JASidePanel.m */; };
+		DF15B46E17622CEC00D27835 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B46D17622CEC00D27835 /* Social.framework */; };
+		DF15B4891762373400D27835 /* NSDictionary+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4821762373400D27835 /* NSDictionary+Null.m */; };
+		DF15B48A1762373400D27835 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4851762373400D27835 /* NSTimer+Blocks.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DF15B48B1762373400D27835 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4881762373400D27835 /* UIButton+Block.m */; };
+		DF15B48E1762391B00D27835 /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B48D1762391B00D27835 /* Colors.m */; };
+		DF15B4931762392800D27835 /* DesignHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4901762392800D27835 /* DesignHelper.m */; };
+		DF15B4941762392800D27835 /* Font.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4921762392800D27835 /* Font.m */; };
+		DF15B4971762393100D27835 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4961762393100D27835 /* Post.m */; };
+		DF15B49E1762393D00D27835 /* FeedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4991762393C00D27835 /* FeedVC.m */; };
+		DF15B49F1762393D00D27835 /* MenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B49B1762393D00D27835 /* MenuVC.m */; };
+		DF15B4A01762393D00D27835 /* NewPostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B49D1762393D00D27835 /* NewPostVC.m */; };
+		DF15B4A31762395100D27835 /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4A21762395100D27835 /* StartVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,10 +81,35 @@
 		DF15B44217621D8A00D27835 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		DF15B44C17621EBF00D27835 /* SplashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashVC.h; path = Cheerly/SplashVC.h; sourceTree = "<group>"; };
 		DF15B44D17621EBF00D27835 /* SplashVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashVC.m; path = Cheerly/SplashVC.m; sourceTree = "<group>"; };
-		DF15B44F17621EDF00D27835 /* StartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
-		DF15B45017621EDF00D27835 /* StartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartVC.m; sourceTree = "<group>"; };
 		DF15B4571762202000D27835 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		DF15B4581762202000D27835 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DF15B45B1762208E00D27835 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		DF15B45C1762208E00D27835 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		DF15B45D1762208E00D27835 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		DF15B45E1762208E00D27835 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		DF15B46D17622CEC00D27835 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		DF15B4811762373400D27835 /* NSDictionary+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Null.h"; sourceTree = "<group>"; };
+		DF15B4821762373400D27835 /* NSDictionary+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Null.m"; sourceTree = "<group>"; };
+		DF15B4841762373400D27835 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		DF15B4851762373400D27835 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		DF15B4871762373400D27835 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
+		DF15B4881762373400D27835 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		DF15B48C1762391B00D27835 /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colors.h; path = Cheerly/Colors.h; sourceTree = "<group>"; };
+		DF15B48D1762391B00D27835 /* Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Colors.m; path = Cheerly/Colors.m; sourceTree = "<group>"; };
+		DF15B48F1762392800D27835 /* DesignHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DesignHelper.h; path = Cheerly/DesignHelper.h; sourceTree = "<group>"; };
+		DF15B4901762392800D27835 /* DesignHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DesignHelper.m; path = Cheerly/DesignHelper.m; sourceTree = "<group>"; };
+		DF15B4911762392800D27835 /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Font.h; path = Cheerly/Font.h; sourceTree = "<group>"; };
+		DF15B4921762392800D27835 /* Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Font.m; path = Cheerly/Font.m; sourceTree = "<group>"; };
+		DF15B4951762393100D27835 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Cheerly/Post.h; sourceTree = "<group>"; };
+		DF15B4961762393100D27835 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Cheerly/Post.m; sourceTree = "<group>"; };
+		DF15B4981762393C00D27835 /* FeedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedVC.h; path = Cheerly/FeedVC.h; sourceTree = "<group>"; };
+		DF15B4991762393C00D27835 /* FeedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedVC.m; path = Cheerly/FeedVC.m; sourceTree = "<group>"; };
+		DF15B49A1762393C00D27835 /* MenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuVC.h; path = Cheerly/MenuVC.h; sourceTree = "<group>"; };
+		DF15B49B1762393D00D27835 /* MenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuVC.m; path = Cheerly/MenuVC.m; sourceTree = "<group>"; };
+		DF15B49C1762393D00D27835 /* NewPostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewPostVC.h; path = Cheerly/NewPostVC.h; sourceTree = "<group>"; };
+		DF15B49D1762393D00D27835 /* NewPostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewPostVC.m; path = Cheerly/NewPostVC.m; sourceTree = "<group>"; };
+		DF15B4A11762395100D27835 /* StartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartVC.h; path = Cheerly/StartVC.h; sourceTree = "<group>"; };
+		DF15B4A21762395100D27835 /* StartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartVC.m; path = Cheerly/StartVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF15B46E17622CEC00D27835 /* Social.framework in Frameworks */,
 				DF15B44317621D8A00D27835 /* AdSupport.framework in Frameworks */,
 				DF15B44117621D8500D27835 /* Accounts.framework in Frameworks */,
 				DF15B43F17621D7E00D27835 /* libsqlite3.dylib in Frameworks */,
@@ -124,6 +163,7 @@
 		DF15B401176219A900D27835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF15B46D17622CEC00D27835 /* Social.framework */,
 				DF15B43E17621D7E00D27835 /* libsqlite3.dylib */,
 				DF15B43217621C9C00D27835 /* libz.1.1.3.dylib */,
 				DF15B44217621D8A00D27835 /* AdSupport.framework */,
@@ -178,6 +218,12 @@
 			isa = PBXGroup;
 			children = (
 				DF15B42517621B8500D27835 /* Constants.h */,
+				DF15B48C1762391B00D27835 /* Colors.h */,
+				DF15B48D1762391B00D27835 /* Colors.m */,
+				DF15B48F1762392800D27835 /* DesignHelper.h */,
+				DF15B4901762392800D27835 /* DesignHelper.m */,
+				DF15B4911762392800D27835 /* Font.h */,
+				DF15B4921762392800D27835 /* Font.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -185,6 +231,8 @@
 		DF15B44817621E3800D27835 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DF15B4951762393100D27835 /* Post.h */,
+				DF15B4961762393100D27835 /* Post.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -192,10 +240,12 @@
 		DF15B44917621E3D00D27835 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DF15B44C17621EBF00D27835 /* SplashVC.h */,
-				DF15B44D17621EBF00D27835 /* SplashVC.m */,
-				DF15B44F17621EDF00D27835 /* StartVC.h */,
-				DF15B45017621EDF00D27835 /* StartVC.m */,
+				DF15B49A1762393C00D27835 /* MenuVC.h */,
+				DF15B49B1762393D00D27835 /* MenuVC.m */,
+				DF15B4981762393C00D27835 /* FeedVC.h */,
+				DF15B4991762393C00D27835 /* FeedVC.m */,
+				DF15B47C1762365A00D27835 /* New Post */,
+				DF15B464176220B200D27835 /* Start */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -210,7 +260,11 @@
 		DF15B44B17621E7D00D27835 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				DF15B45A1762208E00D27835 /* JASidePanelController */,
 				DF15B4561762202000D27835 /* MBProgressHUD */,
+				DF15B4801762373400D27835 /* NSDictionary+Null */,
+				DF15B4831762373400D27835 /* NSTimer+Blocks */,
+				DF15B4861762373400D27835 /* UIButton+Block */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -223,6 +277,68 @@
 			);
 			name = MBProgressHUD;
 			path = Controls/MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		DF15B45A1762208E00D27835 /* JASidePanelController */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B45B1762208E00D27835 /* JASidePanelController.h */,
+				DF15B45C1762208E00D27835 /* JASidePanelController.m */,
+				DF15B45D1762208E00D27835 /* UIViewController+JASidePanel.h */,
+				DF15B45E1762208E00D27835 /* UIViewController+JASidePanel.m */,
+			);
+			name = JASidePanelController;
+			path = Controls/JASidePanelController;
+			sourceTree = "<group>";
+		};
+		DF15B464176220B200D27835 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B44C17621EBF00D27835 /* SplashVC.h */,
+				DF15B44D17621EBF00D27835 /* SplashVC.m */,
+				DF15B4A11762395100D27835 /* StartVC.h */,
+				DF15B4A21762395100D27835 /* StartVC.m */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		DF15B47C1762365A00D27835 /* New Post */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B49C1762393D00D27835 /* NewPostVC.h */,
+				DF15B49D1762393D00D27835 /* NewPostVC.m */,
+			);
+			name = "New Post";
+			sourceTree = "<group>";
+		};
+		DF15B4801762373400D27835 /* NSDictionary+Null */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B4811762373400D27835 /* NSDictionary+Null.h */,
+				DF15B4821762373400D27835 /* NSDictionary+Null.m */,
+			);
+			name = "NSDictionary+Null";
+			path = "Controls/NSDictionary+Null";
+			sourceTree = "<group>";
+		};
+		DF15B4831762373400D27835 /* NSTimer+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B4841762373400D27835 /* NSTimer+Blocks.h */,
+				DF15B4851762373400D27835 /* NSTimer+Blocks.m */,
+			);
+			name = "NSTimer+Blocks";
+			path = "Controls/NSTimer+Blocks";
+			sourceTree = "<group>";
+		};
+		DF15B4861762373400D27835 /* UIButton+Block */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B4871762373400D27835 /* UIButton+Block.h */,
+				DF15B4881762373400D27835 /* UIButton+Block.m */,
+			);
+			name = "UIButton+Block";
+			path = "Controls/UIButton+Block";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +410,20 @@
 				DF15B40F176219A900D27835 /* main.m in Sources */,
 				DF15B413176219A900D27835 /* AppDelegate.m in Sources */,
 				DF15B44E17621EBF00D27835 /* SplashVC.m in Sources */,
-				DF15B45117621EDF00D27835 /* StartVC.m in Sources */,
 				DF15B4591762202000D27835 /* MBProgressHUD.m in Sources */,
+				DF15B45F1762208E00D27835 /* JASidePanelController.m in Sources */,
+				DF15B4601762208E00D27835 /* UIViewController+JASidePanel.m in Sources */,
+				DF15B4891762373400D27835 /* NSDictionary+Null.m in Sources */,
+				DF15B48A1762373400D27835 /* NSTimer+Blocks.m in Sources */,
+				DF15B48B1762373400D27835 /* UIButton+Block.m in Sources */,
+				DF15B48E1762391B00D27835 /* Colors.m in Sources */,
+				DF15B4931762392800D27835 /* DesignHelper.m in Sources */,
+				DF15B4941762392800D27835 /* Font.m in Sources */,
+				DF15B4971762393100D27835 /* Post.m in Sources */,
+				DF15B49E1762393D00D27835 /* FeedVC.m in Sources */,
+				DF15B49F1762393D00D27835 /* MenuVC.m in Sources */,
+				DF15B4A01762393D00D27835 /* NewPostVC.m in Sources */,
+				DF15B4A31762395100D27835 /* StartVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +509,8 @@
 		DF15B423176219A900D27835 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vicente Yarad (WREPZ2756F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vicente Yarad (WREPZ2756F)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -390,6 +520,9 @@
 				INFOPLIST_FILE = "Cheerly/Cheerly-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E5B44D97-CC06-46CD-8799-9FEF3F95F891";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E5B44D97-CC06-46CD-8799-9FEF3F95F891";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -397,6 +530,8 @@
 		DF15B424176219A900D27835 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vicente Yarad (WREPZ2756F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vicente Yarad (WREPZ2756F)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -406,6 +541,9 @@
 				INFOPLIST_FILE = "Cheerly/Cheerly-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E5B44D97-CC06-46CD-8799-9FEF3F95F891";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E5B44D97-CC06-46CD-8799-9FEF3F95F891";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

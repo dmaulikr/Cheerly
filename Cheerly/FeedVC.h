@@ -1,5 +1,5 @@
 //
-//  SplashVC.h
+//  FeedVC.h
 //  Cheerly
 //
 //  Created by Francisco Yarad on 6/7/13.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SplashVC : UIViewController
+@interface FeedVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-+ (void)presentMenuOnController:(UIViewController*)controller;
+@property (strong, nonatomic) UITableView *tableView;
+
 
 @end

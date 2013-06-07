@@ -1,5 +1,5 @@
 //
-//  SplashVC.h
+//  MenuVC.h
 //  Cheerly
 //
 //  Created by Francisco Yarad on 6/7/13.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SplashVC : UIViewController
+@interface MenuVC : UIViewController
 
-+ (void)presentMenuOnController:(UIViewController*)controller;
+@property (strong, nonatomic) UINavigationController *feedVC;
+
+- (void)initViewControllers;
 
 @end

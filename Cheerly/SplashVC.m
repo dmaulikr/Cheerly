@@ -17,15 +17,26 @@
     PFUser *currentUser = [PFUser currentUser];
 
     if (currentUser) {
-
+        [SplashVC presentMenuOnController:self];
     }
     else {
-
+        StartVC *controller = [[StartVC alloc] init];
+        controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:controller animated:YES completion:nil];
     }
+}
 
-    StartVC *controller = [[StartVC alloc] init];
-    controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:controller animated:YES completion:nil];
++ (void)presentMenuOnController:(UIViewController*)controller {
+    MenuVC *menuVC = [[MenuVC alloc] init];
+    [menuVC initViewControllers];
+    
+    JASidePanelController *panelController = [[JASidePanelController alloc] init];
+    [panelController setShouldDelegateAutorotateToVisiblePanel:NO];
+    [panelController setLeftPanel:menuVC];
+    [panelController setCenterPanel:menuVC.feedVC];
+    panelController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [(AppDelegate*)[[UIApplication sharedApplication] delegate] setPanelController:panelController];
+    [controller presentViewController:panelController animated:YES completion:nil];
 
 }
 
