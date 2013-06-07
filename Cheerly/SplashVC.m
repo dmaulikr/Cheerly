@@ -16,7 +16,7 @@
     
     PFUser *currentUser = [PFUser currentUser];
 
-    if (currentUser) {
+    if (currentUser.isAuthenticated) {
         [SplashVC presentMenuOnController:self];
     }
     else {

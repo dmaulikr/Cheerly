@@ -11,12 +11,44 @@
 
 @implementation DesignHelper
 
+#pragma User
+
++ (UIView*)profileOfUser:(PFUser *)user {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+    [view setBackgroundColor:[Colors lightBackgroundShadow]];
+    [view setClipsToBounds:YES];
+    
+    UIImageView *picture = [[UIImageView alloc] initWithFrame:CGRectMake(110, 20, 100, 100)];
+    [picture setClipsToBounds:YES];
+    [picture setBackgroundColor:[Colors darkGray]];
+    [picture setContentMode:UIViewContentModeScaleAspectFill];
+    [picture setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?width=200&height=200", user.username]]];
+    [picture.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [picture.layer setBorderWidth:5.0];
+    [picture.layer setCornerRadius:50.0];
+    [view addSubview:picture];
+    
+    UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(20, 130, 280, 20)];
+    [name setBackgroundColor:[UIColor clearColor]];
+    [name setFont:[Font boldSize:18]];
+    [name setTextColor:[UIColor whiteColor]];
+    [name setText:[user objectForKey:@"name"]];
+    [name setTextAlignment:NSTextAlignmentCenter];
+    [view addSubview:name];
+    
+    return view;
+}
+
 
 #pragma NavBar
 
 + (void)setNavBarAppeareance {
-    [[UINavigationBar appearance] setBackgroundImage:[Colors toImage:[Colors organge]] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar.png"] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor whiteColor], UITextAttributeTextShadowColor : [UIColor clearColor], UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetMake(0, 0)], UITextAttributeFont : [Font normalSize:0.0]}];
+    
+    [[UIBarButtonItem appearance] setBackgroundImage:[[UIImage imageNamed:@"nav_button_orange.png"] stretchableImageWithLeftCapWidth:5.0 topCapHeight:5.0] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[[UIImage imageNamed:@"nav_button_back_orange.png"] stretchableImageWithLeftCapWidth:13.0 topCapHeight:0.0] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+
 }
 + (UIBarButtonItem*)barButton:(NSString *)title target:(id)controller selector:(SEL)selector {
     return [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStyleDone target:controller action:selector];
@@ -45,7 +77,7 @@
 + (UIBarButtonItem*)barBackButton:(UIViewController *)controller {
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 44)];
     [button addTarget:controller.navigationController action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
-    [button setImage:[UIImage imageNamed:@"nav_back_custom.png"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"navbar_back.png"] forState:UIControlStateNormal];
     [button setImageEdgeInsets:UIEdgeInsetsMake(0, 5, 0, 0)];
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewPostVC : UIViewController
+@interface NewPostVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+
+@property (strong, nonatomic) UIImageView *image;
+@property (strong, nonatomic) UIImage *imageCache;
+@property (strong, nonatomic) UITextField *captionField;
 
 @end

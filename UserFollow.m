@@ -1,18 +1,15 @@
 //
-//  Post.m
+//  UserFollow.m
 //  Cheerly
 //
 //  Created by Francisco Yarad on 6/7/13.
 //  Copyright (c) 2013 Nixter, Inc. All rights reserved.
 //
 
-#import "Post.h"
+#import "UserFollow.h"
 
-@implementation Post
-
-@dynamic caption;
-@dynamic image;
+@implementation UserFollow
 @dynamic user;
-@dynamic goal;
+@dynamic receiver;
 
 @end

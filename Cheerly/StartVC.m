@@ -29,18 +29,29 @@
 
     MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [PFFacebookUtils logInWithPermissions:@[@"email"] block:^(PFUser *user, NSError *error) {
-        [progressHUD hide:YES];
 
-        if (user) {
-            if (user.isNew) {
-                
-            }
-            [SplashVC presentMenuOnController:self];
+        if (user.isNew) {
+            [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                if (connection.urlResponse.statusCode == 200) {
+                    NSLog(@"%@", result);
+                    UserProfile *newUser = [[UserProfile alloc] initWithClassName:@"UserProfile"];
+                    newUser.user = user;
+                    if ([result notNull:@"name"]) newUser.name = result[@"name"];
+                    if ([result notNull:@"email"]) user.email = result[@"email"];
+                    if ([result notNull:@"username"]) user.username = result[@"username"];
+                    else user.username = result[@"id"];
+                    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        [newUser saveInBackground];                       
+                    }];
+                }
+                [progressHUD hide:YES];
+                [SplashVC presentMenuOnController:self];
+            }];
         }
         else {
-            
+            if (user) [SplashVC presentMenuOnController:self];
+            [progressHUD hide:YES];
         }
-        
     }];
 
 }

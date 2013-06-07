@@ -1,5 +1,5 @@
 //
-//  Post.h
+//  UserFollow.h
 //  Cheerly
 //
 //  Created by Francisco Yarad on 6/7/13.
@@ -8,11 +8,9 @@
 
 #import <Parse/Parse.h>
 
-@interface Post : PFObject
+@interface UserFollow : PFObject
 
 @property (strong, nonatomic) PFUser *user;
-@property (strong, nonatomic) PFFile *image;
-@property (strong, nonatomic) NSString *caption;
-@property (nonatomic) float goal;
+@property (strong, nonatomic) PFUser *receiver;
 
 @end

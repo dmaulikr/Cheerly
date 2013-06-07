@@ -23,6 +23,8 @@
 #import "Font.h"
 
 // Controls
+#import "BlockActionSheet.h"
+#import "UIImageView+WebCache.h"
 #import "JASidePanelController.h"
 #import "MBProgressHUD.h"
 #import "NSDictionary+Null.h"
@@ -31,6 +33,8 @@
 
 // Objects
 #import "Post.h"
+#import "UserProfile.h"
+#import "UserFollow.h"
 
 // View Controllers
 #import "AppDelegate.h"

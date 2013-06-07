@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface DesignHelper : NSObject
 
+// User
+
++ (UIView*)profileOfUser:(PFUser*)user;
 
 // NavBar
 
