@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StartVC.h
 //  Cheerly
 //
 //  Created by Francisco Yarad on 6/7/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface StartVC : UIViewController
+
+@property (strong, nonatomic) UIButton *fbButton;
 
 @end

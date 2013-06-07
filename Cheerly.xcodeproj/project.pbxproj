@@ -17,7 +17,6 @@
 		DF15B417176219A900D27835 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B416176219A900D27835 /* Default@2x.png */; };
 		DF15B419176219A900D27835 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B418176219A900D27835 /* Default-568h@2x.png */; };
 		DF15B41C176219A900D27835 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF15B41A176219A900D27835 /* MainStoryboard.storyboard */; };
-		DF15B41F176219A900D27835 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B41E176219A900D27835 /* ViewController.m */; };
 		DF15B42A17621C7A00D27835 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B42817621C7A00D27835 /* FacebookSDK.framework */; };
 		DF15B42B17621C7A00D27835 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B42917621C7A00D27835 /* Parse.framework */; };
 		DF15B42D17621C8300D27835 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B42C17621C8300D27835 /* AudioToolbox.framework */; };
@@ -32,6 +31,9 @@
 		DF15B43F17621D7E00D27835 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43E17621D7E00D27835 /* libsqlite3.dylib */; };
 		DF15B44117621D8500D27835 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B44017621D8500D27835 /* Accounts.framework */; };
 		DF15B44317621D8A00D27835 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B44217621D8A00D27835 /* AdSupport.framework */; };
+		DF15B44E17621EBF00D27835 /* SplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B44D17621EBF00D27835 /* SplashVC.m */; };
+		DF15B45117621EDF00D27835 /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B45017621EDF00D27835 /* StartVC.m */; };
+		DF15B4591762202000D27835 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B4581762202000D27835 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,15 +45,13 @@
 		DF15B40C176219A900D27835 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF15B40E176219A900D27835 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF15B410176219A900D27835 /* Cheerly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cheerly-Prefix.pch"; sourceTree = "<group>"; };
-		DF15B411176219A900D27835 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DF15B412176219A900D27835 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF15B411176219A900D27835 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Cheerly/AppDelegate.h; sourceTree = "<group>"; };
+		DF15B412176219A900D27835 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Cheerly/AppDelegate.m; sourceTree = "<group>"; };
 		DF15B414176219A900D27835 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DF15B416176219A900D27835 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DF15B418176219A900D27835 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DF15B41B176219A900D27835 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DF15B41D176219A900D27835 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DF15B41E176219A900D27835 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DF15B42517621B8500D27835 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		DF15B42517621B8500D27835 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Cheerly/Constants.h; sourceTree = "<group>"; };
 		DF15B42817621C7A00D27835 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = Frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
 		DF15B42917621C7A00D27835 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
 		DF15B42C17621C8300D27835 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -66,6 +66,12 @@
 		DF15B43E17621D7E00D27835 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DF15B44017621D8500D27835 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		DF15B44217621D8A00D27835 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DF15B44C17621EBF00D27835 /* SplashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashVC.h; path = Cheerly/SplashVC.h; sourceTree = "<group>"; };
+		DF15B44D17621EBF00D27835 /* SplashVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashVC.m; path = Cheerly/SplashVC.m; sourceTree = "<group>"; };
+		DF15B44F17621EDF00D27835 /* StartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
+		DF15B45017621EDF00D27835 /* StartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartVC.m; sourceTree = "<group>"; };
+		DF15B4571762202000D27835 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DF15B4581762202000D27835 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		DF15B3F6176219A900D27835 = {
 			isa = PBXGroup;
 			children = (
-				DF15B408176219A900D27835 /* Cheerly */,
-				DF15B401176219A900D27835 /* Frameworks */,
-				DF15B400176219A900D27835 /* Products */,
+				DF15B41A176219A900D27835 /* MainStoryboard.storyboard */,
+				DF15B44617621E2D00D27835 /* Assets */,
+				DF15B44717621E3300D27835 /* Helpers */,
+				DF15B44817621E3800D27835 /* Models */,
+				DF15B44917621E3D00D27835 /* View Controllers */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,20 +145,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF15B408176219A900D27835 /* Cheerly */ = {
-			isa = PBXGroup;
-			children = (
-				DF15B42517621B8500D27835 /* Constants.h */,
-				DF15B411176219A900D27835 /* AppDelegate.h */,
-				DF15B412176219A900D27835 /* AppDelegate.m */,
-				DF15B41A176219A900D27835 /* MainStoryboard.storyboard */,
-				DF15B41D176219A900D27835 /* ViewController.h */,
-				DF15B41E176219A900D27835 /* ViewController.m */,
-				DF15B409176219A900D27835 /* Supporting Files */,
-			);
-			path = Cheerly;
-			sourceTree = "<group>";
-		};
 		DF15B409176219A900D27835 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +157,72 @@
 				DF15B418176219A900D27835 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = Cheerly;
+			sourceTree = "<group>";
+		};
+		DF15B44617621E2D00D27835 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B411176219A900D27835 /* AppDelegate.h */,
+				DF15B412176219A900D27835 /* AppDelegate.m */,
+				DF15B44A17621E7300D27835 /* Graphics */,
+				DF15B44B17621E7D00D27835 /* Controls */,
+				DF15B401176219A900D27835 /* Frameworks */,
+				DF15B409176219A900D27835 /* Supporting Files */,
+				DF15B400176219A900D27835 /* Products */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		DF15B44717621E3300D27835 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B42517621B8500D27835 /* Constants.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DF15B44817621E3800D27835 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DF15B44917621E3D00D27835 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B44C17621EBF00D27835 /* SplashVC.h */,
+				DF15B44D17621EBF00D27835 /* SplashVC.m */,
+				DF15B44F17621EDF00D27835 /* StartVC.h */,
+				DF15B45017621EDF00D27835 /* StartVC.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DF15B44A17621E7300D27835 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		DF15B44B17621E7D00D27835 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B4561762202000D27835 /* MBProgressHUD */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		DF15B4561762202000D27835 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DF15B4571762202000D27835 /* MBProgressHUD.h */,
+				DF15B4581762202000D27835 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			path = Controls/MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +293,9 @@
 			files = (
 				DF15B40F176219A900D27835 /* main.m in Sources */,
 				DF15B413176219A900D27835 /* AppDelegate.m in Sources */,
-				DF15B41F176219A900D27835 /* ViewController.m in Sources */,
+				DF15B44E17621EBF00D27835 /* SplashVC.m in Sources */,
+				DF15B45117621EDF00D27835 /* StartVC.m in Sources */,
+				DF15B4591762202000D27835 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +316,7 @@
 				DF15B41B176219A900D27835 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = Cheerly;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

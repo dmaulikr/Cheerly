@@ -17,3 +17,12 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <QuartzCore/QuartzCore.h>
 
+
+// Controls
+#import "MBProgressHUD.h"
+
+
+// View Controllers
+#import "SplashVC.h"
+#import "StartVC.h"
+
