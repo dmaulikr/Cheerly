@@ -18,6 +18,20 @@
 		DF15B419176219A900D27835 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF15B418176219A900D27835 /* Default-568h@2x.png */; };
 		DF15B41C176219A900D27835 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF15B41A176219A900D27835 /* MainStoryboard.storyboard */; };
 		DF15B41F176219A900D27835 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15B41E176219A900D27835 /* ViewController.m */; };
+		DF15B42A17621C7A00D27835 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B42817621C7A00D27835 /* FacebookSDK.framework */; };
+		DF15B42B17621C7A00D27835 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B42917621C7A00D27835 /* Parse.framework */; };
+		DF15B42D17621C8300D27835 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B42C17621C8300D27835 /* AudioToolbox.framework */; };
+		DF15B42F17621C8800D27835 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B42E17621C8800D27835 /* CFNetwork.framework */; };
+		DF15B43117621C9500D27835 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43017621C9500D27835 /* CoreLocation.framework */; };
+		DF15B43317621C9C00D27835 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43217621C9C00D27835 /* libz.1.1.3.dylib */; };
+		DF15B43517621CA300D27835 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43417621CA300D27835 /* MobileCoreServices.framework */; };
+		DF15B43717621CAB00D27835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43617621CAB00D27835 /* QuartzCore.framework */; };
+		DF15B43917621CB500D27835 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43817621CB500D27835 /* Security.framework */; };
+		DF15B43B17621CBC00D27835 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43A17621CBC00D27835 /* StoreKit.framework */; };
+		DF15B43D17621CC700D27835 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43C17621CC700D27835 /* SystemConfiguration.framework */; };
+		DF15B43F17621D7E00D27835 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B43E17621D7E00D27835 /* libsqlite3.dylib */; };
+		DF15B44117621D8500D27835 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B44017621D8500D27835 /* Accounts.framework */; };
+		DF15B44317621D8A00D27835 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF15B44217621D8A00D27835 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +51,21 @@
 		DF15B41B176219A900D27835 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DF15B41D176219A900D27835 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DF15B41E176219A900D27835 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF15B42517621B8500D27835 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		DF15B42817621C7A00D27835 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = Frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
+		DF15B42917621C7A00D27835 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
+		DF15B42C17621C8300D27835 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DF15B42E17621C8800D27835 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DF15B43017621C9500D27835 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DF15B43217621C9C00D27835 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		DF15B43417621CA300D27835 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DF15B43617621CAB00D27835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DF15B43817621CB500D27835 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DF15B43A17621CBC00D27835 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DF15B43C17621CC700D27835 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DF15B43E17621D7E00D27835 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DF15B44017621D8500D27835 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		DF15B44217621D8A00D27835 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +73,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF15B44317621D8A00D27835 /* AdSupport.framework in Frameworks */,
+				DF15B44117621D8500D27835 /* Accounts.framework in Frameworks */,
+				DF15B43F17621D7E00D27835 /* libsqlite3.dylib in Frameworks */,
+				DF15B43D17621CC700D27835 /* SystemConfiguration.framework in Frameworks */,
+				DF15B43B17621CBC00D27835 /* StoreKit.framework in Frameworks */,
+				DF15B43917621CB500D27835 /* Security.framework in Frameworks */,
+				DF15B43717621CAB00D27835 /* QuartzCore.framework in Frameworks */,
+				DF15B43517621CA300D27835 /* MobileCoreServices.framework in Frameworks */,
+				DF15B43317621C9C00D27835 /* libz.1.1.3.dylib in Frameworks */,
+				DF15B43117621C9500D27835 /* CoreLocation.framework in Frameworks */,
+				DF15B407176219A900D27835 /* CoreGraphics.framework in Frameworks */,
+				DF15B42F17621C8800D27835 /* CFNetwork.framework in Frameworks */,
+				DF15B42D17621C8300D27835 /* AudioToolbox.framework in Frameworks */,
 				DF15B403176219A900D27835 /* UIKit.framework in Frameworks */,
 				DF15B405176219A900D27835 /* Foundation.framework in Frameworks */,
-				DF15B407176219A900D27835 /* CoreGraphics.framework in Frameworks */,
+				DF15B42A17621C7A00D27835 /* FacebookSDK.framework in Frameworks */,
+				DF15B42B17621C7A00D27835 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +116,20 @@
 		DF15B401176219A900D27835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF15B43E17621D7E00D27835 /* libsqlite3.dylib */,
+				DF15B43217621C9C00D27835 /* libz.1.1.3.dylib */,
+				DF15B44217621D8A00D27835 /* AdSupport.framework */,
+				DF15B44017621D8500D27835 /* Accounts.framework */,
+				DF15B43017621C9500D27835 /* CoreLocation.framework */,
+				DF15B42E17621C8800D27835 /* CFNetwork.framework */,
+				DF15B42C17621C8300D27835 /* AudioToolbox.framework */,
+				DF15B43C17621CC700D27835 /* SystemConfiguration.framework */,
+				DF15B43A17621CBC00D27835 /* StoreKit.framework */,
+				DF15B43817621CB500D27835 /* Security.framework */,
+				DF15B43617621CAB00D27835 /* QuartzCore.framework */,
+				DF15B43417621CA300D27835 /* MobileCoreServices.framework */,
+				DF15B42817621C7A00D27835 /* FacebookSDK.framework */,
+				DF15B42917621C7A00D27835 /* Parse.framework */,
 				DF15B402176219A900D27835 /* UIKit.framework */,
 				DF15B404176219A900D27835 /* Foundation.framework */,
 				DF15B406176219A900D27835 /* CoreGraphics.framework */,
@@ -83,6 +140,7 @@
 		DF15B408176219A900D27835 /* Cheerly */ = {
 			isa = PBXGroup;
 			children = (
+				DF15B42517621B8500D27835 /* Constants.h */,
 				DF15B411176219A900D27835 /* AppDelegate.h */,
 				DF15B412176219A900D27835 /* AppDelegate.m */,
 				DF15B41A176219A900D27835 /* MainStoryboard.storyboard */,
@@ -260,6 +318,10 @@
 		DF15B423176219A900D27835 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cheerly/Cheerly-Prefix.pch";
 				INFOPLIST_FILE = "Cheerly/Cheerly-Info.plist";
@@ -272,6 +334,10 @@
 		DF15B424176219A900D27835 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cheerly/Cheerly-Prefix.pch";
 				INFOPLIST_FILE = "Cheerly/Cheerly-Info.plist";
@@ -300,6 +366,7 @@
 				DF15B424176219A900D27835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
