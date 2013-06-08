@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ABFlatSwitch.h"
+#import "HPGrowingTextView.h"
 
-@interface NewPostVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@interface NewPostVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, HPGrowingTextViewDelegate>
 
 @property (strong, nonatomic) UIImageView *image;
 @property (strong, nonatomic) UIImage *imageCache;
-@property (strong, nonatomic) UITextField *captionField;
+@property (strong, nonatomic) HPGrowingTextView *captionField;
+@property (strong, nonatomic) ABFlatSwitch *facebookSwitch;
+@property (strong, nonatomic) ABFlatSwitch *twitterSwitch;
 
 
 @end

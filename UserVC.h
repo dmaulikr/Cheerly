@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface UserVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (strong, nonatomic) NSArray *posts;
+@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) PFUser *user;
+
+- (void)openUsername:(NSString*)username;
 
 @end

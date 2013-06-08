@@ -18,6 +18,7 @@
     self.navigationItem.leftBarButtonItem = [DesignHelper barButtonImage:@"navbar_cancel.png" target:self selector:@selector(cancelAction:)];
     self.navigationItem.rightBarButtonItem = [DesignHelper barButton:@"Post" target:self selector:@selector(postAction)];
     [self setUp];
+    
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -36,15 +37,65 @@
     [_image.layer setCornerRadius:5.0];
     [self.view addSubview:_image];
     
-    _captionField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 280, 280)];
-    [_captionField setBackgroundColor:[UIColor clearColor]];
-    [_captionField setTextColor:[UIColor whiteColor]];
-    [_captionField setFont:[Font normalSize:18]];
-    [_captionField setHidden:YES];
-    [_captionField setDelegate:self];
+    _captionField = [[HPGrowingTextView alloc] initWithFrame:CGRectMake(10, 10 + ((300-47)/2), 300, 47)];
+    _captionField.minNumberOfLines = 1;
+    _captionField.maxNumberOfLines = 8;
+    _captionField.returnKeyType = UIReturnKeySend;
+    _captionField.font = [Font boldSize:24];
+    _captionField.textColor = [UIColor whiteColor];
+    _captionField.delegate = self;
+    _captionField.hidden = YES;
+    _captionField.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
     [self.view addSubview:_captionField];
+
+    UIView *shareView = [[UIView alloc] initWithFrame:CGRectMake(10, 320, 300, 80)];
+    [shareView setBackgroundColor:[UIColor whiteColor]];
+    [shareView setClipsToBounds:YES];
+    [shareView.layer setCornerRadius:5.0];
+    [self.view addSubview:shareView];
     
-    UIButton *postButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 320, 300, 40)];
+    UILabel *shareFacebookLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 280, 40)];
+    [shareFacebookLabel setBackgroundColor:[UIColor clearColor]];
+    [shareFacebookLabel setFont:[Font boldSize:14]];
+    [shareFacebookLabel setTextColor:[Colors normalGray]];
+    [shareFacebookLabel setText:@"Share to Facebook"];
+    [shareView addSubview:shareFacebookLabel];
+    
+    _facebookSwitch = [[ABFlatSwitch alloc] initWithFrame:CGRectMake(220, 7.5, 70, 25)];
+    _facebookSwitch.labelFont = [Font boldSize:16];
+    _facebookSwitch.labelColor = [UIColor whiteColor];
+    _facebookSwitch.onTintColor = [Colors organge];
+    _facebookSwitch.offTintColor = [Colors lightGray];
+    _facebookSwitch.knobInset = NO;
+    _facebookSwitch.onText = @"YES";
+    _facebookSwitch.offText = @"NO";
+    [_facebookSwitch setOn:YES];
+    //[_facebookSwitch addTarget:self action:@selector(facebookSwitchAction:) forControlEvents:UIControlEventValueChanged];
+    [shareView addSubview:_facebookSwitch];
+    
+    UIView *divider = [[UIView alloc] initWithFrame:CGRectMake(0, 40, 300, 1)];
+    [divider setBackgroundColor:[Colors lightBackground]];
+    [shareView addSubview:divider];
+    
+    UILabel *shareTwitterLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 40, 280, 40)];
+    [shareTwitterLabel setBackgroundColor:[UIColor clearColor]];
+    [shareTwitterLabel setFont:[Font boldSize:14]];
+    [shareTwitterLabel setTextColor:[Colors normalGray]];
+    [shareTwitterLabel setText:@"Share to Twitter"];
+    [shareView addSubview:shareTwitterLabel];
+
+    _twitterSwitch = [[ABFlatSwitch alloc] initWithFrame:CGRectMake(220, 47.5, 70, 25)];
+    _twitterSwitch.labelFont = [Font boldSize:16];
+    _twitterSwitch.labelColor = [UIColor whiteColor];
+    _twitterSwitch.onTintColor = [Colors organge];
+    _twitterSwitch.offTintColor = [Colors lightGray];
+    _twitterSwitch.knobInset = NO;
+    _twitterSwitch.onText = @"YES";
+    _twitterSwitch.offText = @"NO";
+    //[_twitterSwitch addTarget:self action:@selector(twitterSwitchAction:) forControlEvents:UIControlEventValueChanged];
+    [shareView addSubview:_twitterSwitch];
+
+    UIButton *postButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 410, 300, 40)];
     [postButton setBackgroundImage:[[UIImage imageNamed:@"orange_button.png"] stretchableImageWithLeftCapWidth:4.0 topCapHeight:0.0] forState:UIControlStateNormal];
     [postButton setTitle:@"Post" forState:UIControlStateNormal];
     [postButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -67,8 +118,9 @@
     if (_imageCache && _captionField.text.length > 0) {
         Post *post = [[Post alloc] initWithClassName:@"Post"];
         post.user = [PFUser currentUser];
-        post.image = [PFFile fileWithName:@"goal_image.jpg" data:UIImageJPEGRepresentation(self.imageCache, 0.8)];
+        post.image = [PFFile fileWithData:UIImageJPEGRepresentation(self.imageCache, 0.8)];
         post.caption = _captionField.text;
+        post.cheers_count = 0;
         
         [post saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (succeeded) {
@@ -78,8 +130,21 @@
                 NSLog(@"%@", error);
             }
         }];
-        [self dismissViewControllerAnimated:YES completion:nil];
         
+        // Post to Fb
+        if (_facebookSwitch.isOn) {
+            
+           /* [[FBSession activeSession] requestNewPublishPermissions:@[@"publish_actions"] defaultAudience:FBSessionDefaultAudienceOnlyMe completionHandler:^(FBSession *session, NSError *error) {
+
+
+            }];*/
+            
+
+            
+            
+        }
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
     
 }
@@ -88,34 +153,38 @@
 
 - (IBAction)imageAction:(id)sender {
 
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    imagePicker.delegate = self;
-    imagePicker.allowsEditing = YES;
-    
-    BlockActionSheet *alert = [BlockActionSheet sheetWithTitle:nil];
-    [alert addOrangeButtonWithTitle:@"Take a Picture" block:^{
-        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        imagePicker.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
-        [self presentViewController:imagePicker animated:YES completion:nil];
-    }];
-    [alert addOrangeButtonWithTitle:@"Choose from Library" block:^{
-        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        [self presentViewController:imagePicker animated:YES completion:nil];
-    }];
-    [alert addButtonWithTitle:@"Cancel" block:nil];
-    [alert showInView:self.view];
+    if (_captionField.isFirstResponder) {
+        [_captionField resignFirstResponder];
+    }
+    else {
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+        imagePicker.delegate = self;
+        imagePicker.allowsEditing = YES;
+        
+        BlockActionSheet *alert = [BlockActionSheet sheetWithTitle:nil];
+        [alert addOrangeButtonWithTitle:@"Take a Picture" block:^{
+            imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            imagePicker.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
+            [self presentViewController:imagePicker animated:YES completion:nil];
+        }];
+        [alert addOrangeButtonWithTitle:@"Choose from Library" block:^{
+            imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            [self presentViewController:imagePicker animated:YES completion:nil];
+        }];
+        [alert addButtonWithTitle:@"Cancel" block:nil];
+        [alert showInView:self.view];        
+    }
 }
-
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     _imageCache = info[UIImagePickerControllerEditedImage];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-#pragma Textfield Delegate
+#pragma TextView
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return YES;
+- (void)growingTextView:(HPGrowingTextView *)growingTextView willChangeHeight:(float)height {
+    [_captionField setFrame:CGRectMake(10, 10 + ((300 - height) / 2), 300, height)];
 }
+
 
 @end

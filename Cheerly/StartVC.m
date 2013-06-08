@@ -16,10 +16,12 @@
     
     self.view.backgroundColor = [Colors lightBackground];
     
-    _fbButton = [[UIButton alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 50 , 300, 40)];
-    [_fbButton setBackgroundColor:[Colors organge]];
-    [_fbButton setTitle:@"Connect with Facebook" forState:UIControlStateNormal];
-    [_fbButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIImageView *backgroundView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -20, 320, 568)];
+    [backgroundView setImage:[UIImage imageNamed:@"start_sample.png"]];
+    [self.view addSubview:backgroundView];
+    
+    _fbButton = [[UIButton alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 98 , 300, 40)];
+    [_fbButton setBackgroundImage:[UIImage imageNamed:@"start_fb_button.png"] forState:UIControlStateNormal];
     [_fbButton addTarget:self action:@selector(facebookAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_fbButton];
     

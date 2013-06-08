@@ -14,5 +14,6 @@
 @property (strong, nonatomic) PFFile *image;
 @property (strong, nonatomic) NSString *caption;
 @property (nonatomic) float goal;
+@property (nonatomic) int cheers_count;
 
 @end
